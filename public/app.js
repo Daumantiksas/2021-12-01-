@@ -3203,7 +3203,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 var form = function form() {
-  return "\n    <div class=\"input-group\" style=\"padding: 50px\">\n        <input type=\"text\" aria-label=\"First name\" placeholder=\"vardas\" class=\"name form-control\">\n        <input type=\"text\" aria-label=\"Last name\" placeholder=\"Pavarde\" class=\"lname form-control\">\n        <input type=\"text\" aria-label=\"Email\" placeholder=\"email\" class=\"email form-control\">\n        <button type=\"button\" class=\"btn btn-primary\">Save</button>\n    </div>\n        <div>\n        <ul class=\"storage\" style=\"padding-left: 50px;\">\n        </ul>\n</div>";
+  return "\n    <div class=\"input-group\" style=\"padding: 50px\">\n        <input type=\"text\" aria-label=\"First name\" placeholder=\"vardas\" class=\"name form-control\">\n        <input type=\"text\" aria-label=\"Last name\" placeholder=\"Pavarde\" class=\"lname form-control\">\n        <input type=\"text\" aria-label=\"Email\" placeholder=\"email\" class=\"email form-control\">\n        <button type=\"button\" class=\"btn btn-primary\">Save</button>\n    </div>\n        <div>\n        <ul class=\"storage\" style=\"padding-left: 100px;\">\n        </ul>\n</div>";
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (form);
@@ -3318,9 +3318,9 @@ var show = function show() {
     try {
       for (_iterator.s(); !(_step = _iterator.n()).done;) {
         var i = _step.value;
-        var p = document.createElement('p');
-        p.textContent = "".concat(i.name, " ").concat(i.last, " ").concat(i.email);
-        document.querySelector('.storage').appendChild(p);
+        var li = document.createElement('li');
+        li.textContent = "".concat(i.name, " ").concat(i.last, " ").concat(i.email);
+        document.querySelector('.storage').appendChild(li);
       }
     } catch (err) {
       _iterator.e(err);

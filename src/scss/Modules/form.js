@@ -7,7 +7,7 @@ const form = () => {
         <button type="button" class="btn btn-primary">Save</button>
     </div>
         <div>
-        <ul class="storage" style="padding-left: 50px;">
+        <ul class="storage" style="padding-left: 100px;">
         </ul>
 </div>`)
 }

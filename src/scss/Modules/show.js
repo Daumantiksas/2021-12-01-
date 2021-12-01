@@ -8,9 +8,9 @@ if
     let arr =[]
     arr= JSON.parse(localStorage.getItem('userArr'));
     for (let i of arr){
-        const p = document.createElement('p');
-        p.textContent= `${i.name} ${i.last} ${i.email}`;
-        document.querySelector('.storage').appendChild(p)
+        const li = document.createElement('li');
+        li.textContent= `${i.name} ${i.last} ${i.email}`;
+        document.querySelector('.storage').appendChild(li)
     }
 
 }
